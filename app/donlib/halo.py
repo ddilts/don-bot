@@ -88,6 +88,8 @@ class Halo(object):
             report = self.tasks.report_ec2_halo_footprint_csv.delay()
         elif query_type == "tasks":
             report = self.list_tasks_formatted()
+        elif query_type == "vulns":
+            report = self.tasks.list_vuln_images()
         elif query_type == "selfie":
             report = Halo.take_selfie()
         elif query_type == "help":
