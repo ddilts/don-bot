@@ -27,6 +27,7 @@ class Lexicals(object):
                      "group_firewall_report"),
                     (r'list\s(all\s)*servers', "all_servers"),
                     (r'list\s(all\s)*server\s*groups', "all_groups"),
+                    (r'list\sall\simage\svulns', "all_image_vulns"),
                     (r'servers\sin\sgroup\s+(?!\")\S+', "servers_in_group"),
                     (r'servers\sin\sgroup\s+\"[^\"]+\"', "servers_in_group"),
                     (r'server(s)*\swith\s(cve|CVE)', "servers_by_cve"),
