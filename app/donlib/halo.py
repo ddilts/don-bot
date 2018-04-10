@@ -89,7 +89,7 @@ class Halo(object):
         elif query_type == "tasks":
             report = self.list_tasks_formatted()
         elif query_type == "all_image_vulns":
-            report = self.tasks.list_vuln_images()
+            report = self.tasks.list_vuln_images(target)
         elif query_type == "selfie":
             report = Halo.take_selfie()
         elif query_type == "help":
